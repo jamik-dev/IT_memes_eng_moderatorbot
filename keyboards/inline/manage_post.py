@@ -8,10 +8,4 @@ confirmation_keyboard = InlineKeyboardMarkup(
         InlineKeyboardButton(text="❌ Rad etish", callback_data="cancel"),
     ]]
 )
-share = InlineKeyboardMarkup(
-    inline_keyboard=[
-        [
-            InlineKeyboardButton(text="🔗 Join Us 👥",url="https://t.me/jamshid_dev", callback_data="share")
-        ]
-    ]   
-)
+
