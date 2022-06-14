@@ -40,7 +40,7 @@ async def approve_post(call: CallbackQuery):
 
 
     await call.message.edit_reply_markup()
-    await dp.bot.send_photo(photo = image.file_id, chat_id=target_channel, caption=f"<i><b>The world of memes in English</i></b>\n\n<code>Share with your friends😉</code>\n\n👉 <b><a href='https://t.me/IT_memes_eng'>Telegram</a></b> 👈")
+    await dp.bot.send_photo(photo = image.file_id, chat_id=target_channel, caption=f"<i><b>The world of memes in English</b></i>\n\n<code>Share with your friends😉</code>\n\n👉 <b><a href='https://t.me/IT_memes_eng'>Telegram</a></b> 👈")
     await call.answer(cache_time=60)
 
 
