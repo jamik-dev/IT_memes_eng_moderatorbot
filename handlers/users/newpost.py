@@ -23,6 +23,22 @@ async def approve_post(call: CallbackQuery):
     await call.answer("Chop etishga ruhsat berdingiz.", show_alert=True)
     target_channel = CHANNELS[0]
     image = call.message.photo[-1]
+    # response = likedFunc(image)
+
+    # if response == "full":
+    #     await call.message.answer(f"1 kunlik reja to'la!\n{likedMeme}")
+    #     tz_UZ = pytz.timezone('Asia/Tashkent') 
+    #     hour = datetime.now(tz_UZ).strftime("%H")
+    #     minute = datetime.now(tz_UZ).strftime("%M")
+    #     for obj in likedMeme:
+    #         if int(hour)>=0 and int(hour) <= 6:
+    #             while "0600" != hour+minute:
+    #                 x = int(hour)*60 + int(minute)
+    #                 y = 360
+    #                 z = y-x
+    #                 time.sleep(z)
+
+
     await call.message.edit_reply_markup()
     await dp.bot.send_photo(photo = image.file_id, chat_id=target_channel, caption=f"<i><b>The world of memes in English</i></b>\n\n<code>Share with your friends😉</code>\n\n👉 <b><a href='https://t.me/IT_memes_eng'>Telegram</a></b> 👈")
     await call.answer(cache_time=60)
