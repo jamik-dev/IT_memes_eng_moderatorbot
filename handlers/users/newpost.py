@@ -44,7 +44,7 @@ async def approve_post(call: CallbackQuery):
     await call.answer(cache_time=60)
 
 
-# disable_webpage_preview = True , messages not photos
+# disable_webpage_preview = True , messages not photos = > bla bla
 
 @dp.callback_query_handler(text="cancel")
 async def decline_post(call: CallbackQuery):
